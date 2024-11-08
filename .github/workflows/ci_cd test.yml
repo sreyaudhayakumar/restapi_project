@@ -29,13 +29,13 @@ jobs:
 
     - name: Set up Django database and run migrations
       env:
-        DJANGO_SETTINGS_MODULE: rest_api.settings  # Replace with your project settings module
+        DJANGO_SETTINGS_MODULE: rest_crud.settings  # Replace with your project settings module
       run: |
         python manage.py migrate
 
     - name: Run Django tests
       env:
-        DJANGO_SETTINGS_MODULE: rest_api.settings  # Replace with your project settings module
+        DJANGO_SETTINGS_MODULE: rest_crud.settings  # Replace with your project settings module
       run: |
         python manage.py test
 
