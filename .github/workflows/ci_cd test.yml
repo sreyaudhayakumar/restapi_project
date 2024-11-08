@@ -22,7 +22,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r C:\Users\Sreya U\Desktop\restapi project\rest_api\rest_crud\requirements.txt
+
 
     - name: Set up Django database and run migrations
       env:
