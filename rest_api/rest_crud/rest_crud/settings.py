@@ -76,16 +76,24 @@ WSGI_APPLICATION = 'rest_crud.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'restapi1',
+#         'USER':'root',
+#         'PASSWD':'',
+#         'HOST':'localhost',
+#         'PORT':'',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'restapi1',
-        'USER':'root',
-        'PASSWD':'',
-        'HOST':'localhost',
-        'PORT':'',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
