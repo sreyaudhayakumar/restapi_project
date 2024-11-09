@@ -37,5 +37,6 @@ jobs:
       env:
         DJANGO_SETTINGS_MODULE: rest_crud.settings  # Replace with your project settings module
       run: |
-        python rest_api/rest_crud/api_app/manage.py test
+       python rest_api/rest_crud/manage.py test
+
 
