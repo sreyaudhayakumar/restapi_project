@@ -1,5 +1,11 @@
 from django.shortcuts import render
-from asyncio.windows_events import NULL
+# from asyncio.windows_events import NULL
+import sys
+if sys.platform == "win32":
+    from asyncio.windows_events import NULL
+else:
+    NULL = None
+
 from rest_framework.response import Response
 from .models import Person
 from rest_framework import status, permissions
