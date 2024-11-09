@@ -25,7 +25,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r rest_crud/requirements.txt  # Ensure this path is correct
+        pip install git+https://github.com/sreyaudhayakumar/restapi_project_ci_cd
 
     - name: Set up Django database and run migrations
       env:
